@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tourly - Travel agancy</title>
+  <title>Arthenis Travel Surabaya - Open Trip, Private Trip & Outing Gathering</title>
 
   <!-- 
     - favicon
@@ -37,112 +37,130 @@
 
     <div class="overlay" data-overlay></div>
 
+    <!-- Top Bar: Helpline & Mobile Navigation -->
     <div class="header-top">
       <div class="container">
 
-        <a href="tel:+01123456790" class="helpline-box">
-
+        <a href="https://wa.me/6282230557434" target="_blank" class="helpline-box" aria-label="WhatsApp Arthenis Travel">
           <div class="icon-box">
-            <ion-icon name="call-outline"></ion-icon>
+            <ion-icon name="logo-whatsapp"></ion-icon>
           </div>
 
           <div class="wrapper">
-            <p class="helpline-title">For Further Inquires :</p>
-
-            <p class="helpline-number">+01 (123) 4567 90</p>
+            <p class="helpline-title">Info & Booking (WhatsApp) :</p>
+            <p class="helpline-number">0822-3055-7434</p>
           </div>
-
         </a>
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" alt="Tourly logo">
+        <!-- Mobile Logo -->
+        <a href="#" class="logo mobile-logo brand-text-logo">
+          <span class="brand-name">Arthenis<span>Travel</span></span>
+          <span class="brand-badge">Surabaya</span>
         </a>
 
-        <div class="header-btn-group">
+        <!-- Desktop Social Links -->
+        <ul class="social-list desktop-only">
+          <li>
+            <a href="https://instagram.com/arthenistravel_sby/?hl=en" target="_blank" class="social-link instagram" aria-label="Instagram @arthenistravel_sby">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://linktr.ee/arthenistravel" target="_blank" class="social-link linktree" aria-label="Linktree Arthenis Travel">
+              <ion-icon name="link-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/6282230557434" target="_blank" class="social-link whatsapp" aria-label="WhatsApp">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+        </ul>
 
-          <button class="search-btn" aria-label="Search">
-            <ion-icon name="search"></ion-icon>
+        <div class="header-btn-group mobile-only">
+          <button class="search-btn" aria-label="Cari Destinasi" data-search-toggle>
+            <ion-icon name="search-outline"></ion-icon>
           </button>
 
-          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <button class="nav-open-btn" aria-label="Buka Menu" data-nav-open-btn>
             <ion-icon name="menu-outline"></ion-icon>
           </button>
-
         </div>
 
       </div>
     </div>
 
+    <!-- Main Navigation Bar -->
     <div class="header-bottom">
       <div class="container">
 
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
+        <!-- Desktop Logo -->
+        <a href="#" class="logo desktop-logo brand-text-logo">
+          <span class="brand-name">Arthenis<span>Travel</span></span>
+          <span class="brand-badge">Surabaya</span>
+        </a>
 
         <nav class="navbar" data-navbar>
-
           <div class="navbar-top">
-
-            <a href="#" class="logo">
-              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            <a href="#" class="logo brand-text-logo dark">
+              <span class="brand-name">Arthenis<span>Travel</span></span>
+              <span class="brand-badge">Surabaya</span>
             </a>
 
-            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <button class="nav-close-btn" aria-label="Tutup Menu" data-nav-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
-
           </div>
 
           <ul class="navbar-list">
-
             <li>
-              <a href="#home" class="navbar-link" data-nav-link>home</a>
+              <a href="#home" class="navbar-link" data-nav-link>Beranda</a>
             </li>
-
             <li>
-              <a href="#" class="navbar-link" data-nav-link>about us</a>
+              <a href="#about" class="navbar-link" data-nav-link>Tentang Kami</a>
             </li>
-
             <li>
-              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
+              <a href="#destination" class="navbar-link" data-nav-link>Open Trip</a>
             </li>
-
             <li>
-              <a href="#package" class="navbar-link" data-nav-link>packages</a>
+              <a href="#package" class="navbar-link" data-nav-link>Paket Wisata</a>
             </li>
-
             <li>
-              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+              <a href="#gallery" class="navbar-link" data-nav-link>Galeri</a>
             </li>
-
             <li>
-              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+              <a href="#contact" class="navbar-link" data-nav-link>Kontak</a>
             </li>
-
           </ul>
 
+          <div class="navbar-bottom mobile-only">
+            <button class="btn btn-primary navbar-book-btn" data-book-btn data-destination="Menu Mobile Arthenis">Pesan Trip Sekarang</button>
+            <ul class="social-list">
+              <li>
+                <a href="https://instagram.com/arthenistravel_sby/?hl=en" target="_blank" class="social-link instagram" aria-label="Instagram">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://linktr.ee/arthenistravel" target="_blank" class="social-link linktree" aria-label="Linktree">
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/6282230557434" target="_blank" class="social-link whatsapp" aria-label="WhatsApp">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
-        <button class="btn btn-primary">Book Now</button>
+        <div class="header-action-group desktop-only">
+          <button class="search-btn desktop-search-btn" aria-label="Cari Destinasi" data-search-toggle>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <button class="btn btn-primary" data-book-btn data-destination="Open Trip Weekend">Pesan Trip</button>
+        </div>
 
       </div>
     </div>
@@ -160,21 +178,42 @@
         - #HERO
       -->
 
-      <section class="hero" id="home">
+      <section class="hero" id="home" data-reveal="fade-up">
         <div class="container">
 
-          <h2 class="h1 hero-title">Journey to explore world</h2>
+          <div class="hero-content">
+            <span class="hero-badge" data-reveal="fade-up" data-reveal-delay="100">
+              <span class="badge-accent">EST. 2014</span> OPEN TRIP EVERY WEEKEND
+            </span>
+            
+            <h2 class="h1 hero-title" data-reveal="fade-up" data-reveal-delay="200">
+              Jelajahi Indonesia <br>Bersama Arthenis Travel
+            </h2>
 
-          <p class="hero-text">
-            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
-            voluptatibus habitant?
-            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
-          </p>
+            <p class="hero-text" data-reveal="fade-up" data-reveal-delay="300">
+              Spesialis Open Trip, Private Trip, Outing & Corporate Gathering terpercaya berbasis di Surabaya. Nikmati pengalaman liburan seru dan profesional setiap akhir pekan!
+            </p>
 
-          <div class="btn-group">
-            <button class="btn btn-primary">Learn more</button>
+            <div class="btn-group" data-reveal="fade-up" data-reveal-delay="400">
+              <a href="#destination" class="btn btn-primary">Lihat Open Trip</a>
+              <button class="btn btn-secondary" data-book-btn data-destination="Konsultasi Private Trip">Tanya Admin WA</button>
+            </div>
+          </div>
 
-            <button class="btn btn-secondary">Book now</button>
+          <!-- Hero Stats -->
+          <div class="hero-stats" data-reveal="fade-up" data-reveal-delay="500">
+            <div class="stat-item">
+              <span class="stat-number" data-count="12">0</span>
+              <span class="stat-label">Tahun Berpengalaman</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="64">0</span>
+              <span class="stat-label">K+ Followers IG</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="7600">0</span>
+              <span class="stat-label">+ Total Posting & Trip</span>
+            </div>
           </div>
 
         </div>
@@ -188,37 +227,55 @@
         - #TOUR SEARCH
       -->
 
-      <section class="tour-search">
+      <section class="tour-search" data-reveal="fade-up">
         <div class="container">
 
-          <form action="" class="tour-search-form">
+          <form action="#" class="tour-search-form" data-search-form>
 
             <div class="input-wrapper">
-              <label for="destination" class="input-label">Search Destination*</label>
+              <label for="destination-input" class="input-label">
+                <ion-icon name="location-outline"></ion-icon>
+                Cari Destinasi / Trip*
+              </label>
 
-              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
-                class="input-field">
+              <input type="text" name="destination" id="destination-input" required placeholder="Cari Trip (misal: Bromo, Kawah Ijen, Labuan Bajo, Penida)"
+                class="input-field" data-live-search autocomplete="off">
+              
+              <!-- Search Suggestions -->
+              <div class="search-suggestions" data-search-suggestions></div>
             </div>
 
             <div class="input-wrapper">
-              <label for="people" class="input-label">Pax Number*</label>
+              <label for="people" class="input-label">
+                <ion-icon name="people-outline"></ion-icon>
+                Jumlah Peserta*
+              </label>
 
-              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
+              <input type="number" name="people" id="people" required placeholder="Jumlah Orang" min="1" max="100" class="input-field">
             </div>
 
             <div class="input-wrapper">
-              <label for="checkin" class="input-label">Checkin Date**</label>
+              <label for="checkin" class="input-label">
+                <ion-icon name="calendar-outline"></ion-icon>
+                Tanggal Trip*
+              </label>
 
-              <input type="date" name="checkin" id="checkin" required class="input-field">
+              <input type="date" name="checkin" id="checkin" required class="input-field" min="">
             </div>
 
             <div class="input-wrapper">
-              <label for="checkout" class="input-label">Checkout Date*</label>
+              <label for="checkout" class="input-label">
+                <ion-icon name="calendar-clear-outline"></ion-icon>
+                Selesai Trip*
+              </label>
 
-              <input type="date" name="checkout" id="checkout" required class="input-field">
+              <input type="date" name="checkout" id="checkout" required class="input-field" min="">
             </div>
 
-            <button type="submit" class="btn btn-secondary">Inquire now</button>
+            <button type="submit" class="btn btn-secondary">
+              <ion-icon name="search-outline"></ion-icon>
+              Cari Jadwal Trip
+            </button>
 
           </form>
 
@@ -230,129 +287,1029 @@
 
 
       <!-- 
-        - #POPULAR
+        - #POPULAR DESTINATIONS
       -->
 
-      <section class="popular" id="destination">
+      <section class="popular" id="destination" data-reveal="fade-up">
         <div class="container">
 
-          <p class="section-subtitle">Uncover place</p>
+          <p class="section-subtitle" data-reveal="fade-up">Open Trip & Private Trip</p>
 
-          <h2 class="h2 section-title">Popular destination</h2>
+          <h2 class="h2 section-title" data-reveal="fade-up" data-reveal-delay="100">Trip Favorit Akhir Pekan</h2>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+          <p class="section-text" data-reveal="fade-up" data-reveal-delay="150">
+            Jadwal Open Trip paling diminati peserta Arthenis Travel dengan titik keberangkatan utama dari Lamongan, Gresik, Surabaya & Sidoarjo.
           </p>
 
-          <ul class="popular-list">
+          <!-- Destination Filter Tabs -->
+          <div class="filter-tab-wrapper" data-reveal="fade-up" data-reveal-delay="200">
+            <button class="filter-tab-btn active" data-dest-filter="all">Semua Trip</button>
+            <button class="filter-tab-btn" data-dest-filter="bromo">Bromo & Ijen</button>
+            <button class="filter-tab-btn" data-dest-filter="dieng">Dieng Plateau</button>
+            <button class="filter-tab-btn" data-dest-filter="pantai">Pantai & Pulau</button>
+            <button class="filter-tab-btn" data-dest-filter="bali">Bali & Jogja</button>
+          </div>
 
-            <li>
+          <ul class="popular-list" data-dest-grid>
+
+            <li data-dest-item="bromo" data-reveal="stagger">
               <div class="popular-card">
-
+                <button class="wishlist-btn" aria-label="Tambah ke wishlist" data-wishlist-btn data-item-name="Open Trip Bromo Midnight">
+                  <ion-icon name="heart-outline" class="heart-icon"></ion-icon>
+                </button>
                 <figure class="card-img">
-                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
+                  <img src="./assets/images/popular-1.jpg" alt="Open Trip Bromo Sunrise" loading="lazy" width="380" height="440">
                 </figure>
-
                 <div class="card-content">
-
                   <div class="card-rating">
                     <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    <span class="rating-text">4.9</span>
                   </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Italy</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">San miguel</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
+                  <p class="card-subtitle"><a href="#">Jawa Timur • Weekend Trip</a></p>
+                  <h3 class="h3 card-title"><a href="#">Gunung Bromo Sunrise</a></h3>
+                  <p class="card-text">Penanjakan Sunrise, Kawah Bromo, Jeep 4x4, Pasir Berbisik & Savana Teletubbies. Berangkat setiap weekend.</p>
+                  <button class="card-action-btn" data-book-btn data-destination="Open Trip Bromo Sunrise (Rp 375rb)">
+                    Pesan Seat <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
                 </div>
-
               </div>
             </li>
 
-            <li>
+            <li data-dest-item="dieng" data-reveal="stagger" data-reveal-delay="100">
               <div class="popular-card">
-
+                <button class="wishlist-btn" aria-label="Tambah ke wishlist" data-wishlist-btn data-item-name="Open Trip Dieng Plateau">
+                  <ion-icon name="heart-outline" class="heart-icon"></ion-icon>
+                </button>
                 <figure class="card-img">
-                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                  <img src="./assets/images/popular-2.jpg" alt="Dieng Plateau & Batu Angkruk" loading="lazy" width="380" height="440">
                 </figure>
-
                 <div class="card-content">
-
                   <div class="card-rating">
                     <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    <span class="rating-text">5.0</span>
                   </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Dubai</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Burj khalifa</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
+                  <p class="card-subtitle"><a href="#">Jawa Tengah • Over Night</a></p>
+                  <h3 class="h3 card-title"><a href="#">Dieng + Batu Angkruk</a></h3>
+                  <p class="card-text">Spot foto Negeri di Atas Awan Batu Angkruk, Candi Arjuna, Telaga Warna, dan Golden Sunrise Sikunir.</p>
+                  <button class="card-action-btn" data-book-btn data-destination="Open Trip Dieng + Batu Angkruk (Rp 500rb)">
+                    Pesan Seat <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
                 </div>
-
               </div>
             </li>
 
-            <li>
+            <li data-dest-item="pantai" data-reveal="stagger" data-reveal-delay="200">
               <div class="popular-card">
-
+                <button class="wishlist-btn" aria-label="Tambah ke wishlist" data-wishlist-btn data-item-name="Pulau Menjangan X Tabuhan">
+                  <ion-icon name="heart-outline" class="heart-icon"></ion-icon>
+                </button>
                 <figure class="card-img">
-                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                  <img src="./assets/images/popular-3.jpg" alt="Pulau Menjangan & Tabuhan" loading="lazy" width="380" height="440">
                 </figure>
-
                 <div class="card-content">
-
                   <div class="card-rating">
                     <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    <span class="rating-text">4.9</span>
                   </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Japan</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Kyoto temple</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
+                  <p class="card-subtitle"><a href="#">Bali & Banyuwangi • Island Hopping</a></p>
+                  <h3 class="h3 card-title"><a href="#">Menjangan X Pulau Tabuhan</a></h3>
+                  <p class="card-text">Snorkeling koral warna-warni Taman Nasional Bali Barat dan santai di pulau pasir putih Tabuhan.</p>
+                  <button class="card-action-btn" data-book-btn data-destination="Open Trip Menjangan X Tabuhan (Rp 500rb)">
+                    Pesan Seat <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
                 </div>
-
               </div>
             </li>
 
           </ul>
 
-          <button class="btn btn-primary">More destintion</button>
+          <button class="btn btn-primary" data-book-btn data-destination="Tanya Semua Jadwal Open Trip Arthenis" data-reveal="fade-up">
+            <ion-icon name="compass-outline"></ion-icon>
+            Lihat Semua Jadwal Trip
+          </button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #OPEN TRIP SCHEDULE (Jadwal Rilis Resmi)
+      -->
+
+      <section class="schedule" id="schedule" data-reveal="fade-up">
+        <div class="container">
+
+          <div class="schedule-header text-center">
+            <span class="section-subtitle">Rilis Jadwal Resmi 🚨</span>
+            <h2 class="h2 section-title">Jadwal Open Trip 2026</h2>
+            <p class="section-text">
+              Pilih bulan liburan favoritmu! Di jamin liburanmu semakin rame & berwarna bersama Arthenis Tour & Travel! ✨
+            </p>
+
+            <!-- Single Month Navigator Display -->
+            <div class="single-month-carousel">
+              <button class="month-nav-btn prev" data-month-nav="prev" aria-label="Bulan Sebelumnya">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+              </button>
+
+              <div class="month-title-display">
+                <span class="month-display-text" data-month-display>
+                  <ion-icon name="calendar-clear-outline"></ion-icon> Juli 2026
+                </span>
+              </div>
+
+              <button class="month-nav-btn next" data-month-nav="next" aria-label="Bulan Berikutnya">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+            </div>
+
+            <div class="meeting-point-box">
+              <ion-icon name="location-sharp"></ion-icon>
+              <span>Meeting Point / Titik Penjemputan: <strong>Lamongan • Gresik • Surabaya • Sidoarjo</strong></span>
+            </div>
+          </div>
+
+          <!-- ========================================================
+               1. MONTH: JULI 2026
+               ======================================================== -->
+          <div class="month-content-pane active" data-month-content="juli">
+
+            <div class="filter-tab-wrapper schedule-filters">
+              <button class="filter-tab-btn active" data-schedule-filter="all">Semua Tanggal (11 Trip)</button>
+              <button class="filter-tab-btn" data-schedule-filter="04-05">04 - 05 Juli</button>
+              <button class="filter-tab-btn" data-schedule-filter="11-12">11 - 12 Juli</button>
+              <button class="filter-tab-btn" data-schedule-filter="18-19">18 - 19 Juli</button>
+              <button class="filter-tab-btn" data-schedule-filter="25-26">25 - 26 Juli</button>
+            </div>
+
+            <div class="schedule-grid">
+
+              <div class="schedule-card" data-schedule-item="04-05" data-trip-card data-trip-title="Dieng + Taman Langit" data-trip-price="Rp 500.000" data-trip-date="04 - 05 Juli 2026" data-trip-desc="Eksplorasi dataran tinggi Dieng, Candi Arjuna, Kawah Sikidang, & keasrian spot foto Taman Langit." data-trip-mp="Lamongan • Gresik • Surabaya • Sidoarjo" data-trip-img1="./assets/images/popular-2.jpg" data-trip-img2="./assets/images/gallery-2.jpg" data-trip-img3="./assets/images/gallery-1.jpg">
+                <figure class="schedule-card-img">
+                  <img src="./assets/images/popular-2.jpg" alt="Dieng + Taman Langit" loading="lazy" width="350" height="160">
+                  <span class="card-badge-overlay"><ion-icon name="images-outline"></ion-icon> Detail & Galeri</span>
+                </figure>
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 04 - 05 Juli 2026</span>
+                  <span class="schedule-price">Rp 500.000</span>
+                </div>
+                <h3 class="schedule-title">Dieng + Taman Langit</h3>
+                <p class="schedule-desc">Eksplorasi dataran tinggi Dieng, Candi Arjuna, Kawah Sikidang, & keasrian spot foto Taman Langit.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Dieng + Taman Langit (04-05 Juli - Rp 500rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="04-05" data-trip-card data-trip-title="Gunung Bromo Sunrise" data-trip-price="Rp 375.000" data-trip-date="04 - 05 Juli 2026" data-trip-desc="Midnight trip Bromo, Jeep 4x4, Penanjakan Sunrise, Kawah Bromo, Pasir Berbisik & Savana Teletubbies." data-trip-mp="Lamongan • Gresik • Surabaya • Sidoarjo" data-trip-img1="./assets/images/popular-1.jpg" data-trip-img2="./assets/images/packege-1.jpg" data-trip-img3="./assets/images/gallery-4.jpg">
+                <figure class="schedule-card-img">
+                  <img src="./assets/images/popular-1.jpg" alt="Gunung Bromo Sunrise" loading="lazy" width="350" height="160">
+                  <span class="card-badge-overlay"><ion-icon name="images-outline"></ion-icon> Detail & Galeri</span>
+                </figure>
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 04 - 05 Juli 2026</span>
+                  <span class="schedule-price">Rp 375.000</span>
+                </div>
+                <h3 class="schedule-title">Gunung Bromo Sunrise</h3>
+                <p class="schedule-desc">Midnight trip Bromo, Jeep 4x4, Penanjakan Sunrise, Kawah Bromo, Pasir Berbisik & Savana Teletubbies.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Bromo (04-05 Juli - Rp 375rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="04-05" data-trip-card data-trip-title="Gunung Lorokan" data-trip-price="Rp 285.000" data-trip-date="05 Juli 2026 (1D)" data-trip-desc="Trekking santai 1 hari ke puncak Gunung Lorokan Pacet dengan panorama alam asri & udara sejuk gunung." data-trip-mp="Lamongan • Gresik • Surabaya • Sidoarjo" data-trip-img1="./assets/images/popular-2.jpg" data-trip-img2="./assets/images/gallery-2.jpg" data-trip-img3="./assets/images/gallery-3.jpg">
+                <figure class="schedule-card-img">
+                  <img src="./assets/images/popular-2.jpg" alt="Gunung Lorokan" loading="lazy" width="350" height="160">
+                  <span class="card-badge-overlay"><ion-icon name="images-outline"></ion-icon> Detail & Galeri</span>
+                </figure>
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 05 Juli 2026 (1D)</span>
+                  <span class="schedule-price">Rp 285.000</span>
+                </div>
+                <h3 class="schedule-title">Gunung Lorokan</h3>
+                <p class="schedule-desc">Trekking santai 1 hari ke puncak Gunung Lorokan Pacet dengan panorama alam asri & udara sejuk gunung.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Gunung Lorokan (05 Juli - Rp 285rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="11-12">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 11 - 12 Juli 2026</span>
+                  <span class="schedule-price">Rp 500.000</span>
+                </div>
+                <h3 class="schedule-title">Pulau Menjangan X Pulau Tabuhan</h3>
+                <p class="schedule-desc">Snorkeling spot terbaik di Taman Nasional Bali Barat (Menjangan) dan pulau pasir putih Tabuhan Banyuwangi.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Menjangan X Tabuhan (11-12 Juli - Rp 500rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="11-12">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 11 - 12 Juli 2026</span>
+                  <span class="schedule-price">Rp 485.000</span>
+                </div>
+                <h3 class="schedule-title">Nepal Van Java X Sukomakmur</h3>
+                <p class="schedule-desc">Jelajahi keunikan dusun bertingkat lereng Sumbing (Nepal Van Java Magelang) & terasering Sukomakmur.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Nepal Van Java X Sukomakmur (11-12 Juli - Rp 485rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="18-19">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 18 - 19 Juli 2026</span>
+                  <span class="schedule-price">Rp 350.000</span>
+                </div>
+                <h3 class="schedule-title">Kawah Ijen - Air Terjun Jagir - Djawatan</h3>
+                <p class="schedule-desc">Fenomena langka Blue Fire Kawah Ijen, kesegaran Air Terjun Jagir, dan hutan magis De Djawatan Banyuwangi.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Kawah Ijen - Jagir - Djawatan (18-19 Juli - Rp 350rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="18-19">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 18 - 19 Juli 2026</span>
+                  <span class="schedule-price">Rp 475.000</span>
+                </div>
+                <h3 class="schedule-title">Jogja On The Rock</h3>
+                <p class="schedule-desc">Petualangan tebing tebing karang pantai Gunungkidul Jogja, Malioboro, dan destinasi hits Yogyakarta.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Jogja On The Rock (18-19 Juli - Rp 475rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="18-19">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 19 Juli 2026 (1D)</span>
+                  <span class="schedule-price">Rp 350.000</span>
+                </div>
+                <h3 class="schedule-title">Panorama Kapas Biru - Tumpak Sewu - Goa Tetes</h3>
+                <p class="schedule-desc">Sensasi petualangan air terjun megah Tumpak Sewu Lumajang, Kapas Biru, dan eksplor eksotis Goa Tetes.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Tumpak Sewu - Kapas Biru (19 Juli - Rp 350rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="25-26">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 25 - 26 Juli 2026</span>
+                  <span class="schedule-price">Rp 550.000</span>
+                </div>
+                <h3 class="schedule-title">Bromo Spot Bulan (Special Edition)</h3>
+                <p class="schedule-desc">Paket spesial lanskap Bromo mirip permukaan bulan, stargazing malam hari, dan hunting foto astrofotografi.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Bromo Spot Bulan (25-26 Juli - Rp 550rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="25-26">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 25 - 26 Juli 2026</span>
+                  <span class="schedule-price">Rp 350.000</span>
+                </div>
+                <h3 class="schedule-title">Explore Trenggalek</h3>
+                <p class="schedule-desc">Keindahan pantai perawan Trenggalek, Pantai Pelang, Pantai Karanggongso & wisata alam tersembunyi Jatim.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Explore Trenggalek (25-26 Juli - Rp 350rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-card" data-schedule-item="25-26">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 25 - 26 Juli 2026</span>
+                  <span class="schedule-price">Rp 450.000</span>
+                </div>
+                <h3 class="schedule-title">Explore Pacitan (Pantai Pangasan - Sungai Maron)</h3>
+                <p class="schedule-desc">Susur Sungai Maron mirip Sungai Amazon, tebing persawahan Pantai Pangasan & Karang Bolong Pacitan.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Explore Pacitan (25-26 Juli - Rp 450rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="schedule-expand-wrapper text-center">
+              <button class="btn btn-secondary schedule-expand-btn" data-schedule-expand>
+                <span>Lihat Semua Trip Juli (11 Trip)</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- ========================================================
+               2. MONTH: AGUSTUS 2026
+               ======================================================== -->
+          <div class="month-content-pane" data-month-content="agustus">
+
+            <div class="filter-tab-wrapper schedule-filters">
+              <button class="filter-tab-btn active" data-schedule-filter="all">Semua Tanggal (16 Trip)</button>
+              <button class="filter-tab-btn" data-schedule-filter="01-02">01 - 02 Ags</button>
+              <button class="filter-tab-btn" data-schedule-filter="05-07">05 - 07 Ags</button>
+              <button class="filter-tab-btn" data-schedule-filter="08-09">08 - 09 Ags</button>
+              <button class="filter-tab-btn" data-schedule-filter="14-17">14 - 17 Ags</button>
+              <button class="filter-tab-btn" data-schedule-filter="22-23">22 - 23 Ags</button>
+              <button class="filter-tab-btn" data-schedule-filter="27-30">27 - 30 Ags</button>
+            </div>
+
+            <div class="schedule-grid">
+
+              <!-- 1. Bromo -->
+              <div class="schedule-card" data-schedule-item="01-02">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 01 - 02 Agustus 2026</span>
+                  <span class="schedule-price">Rp 375.000</span>
+                </div>
+                <h3 class="schedule-title">Gunung Bromo Sunrise</h3>
+                <p class="schedule-desc">Penanjakan Sunrise Bromo, Kawah Bromo, Pasir Berbisik, dan Savana Teletubbies.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Bromo (01-02 Ags - Rp 375rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Jeep Semeru + Tumpak Sewu -->
+              <div class="schedule-card" data-schedule-item="01-02">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 01 - 02 Agustus 2026</span>
+                  <span class="schedule-price">Rp 575.000</span>
+                </div>
+                <h3 class="schedule-title">Jeep Semeru + Tumpak Sewu</h3>
+                <p class="schedule-desc">Offroad Jeep lereng Semeru dan eksplor panorama megah air terjun Tumpak Sewu Lumajang.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Jeep Semeru + Tumpak Sewu (01-02 Ags - Rp 575rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Ranukumbolo -->
+              <div class="schedule-card" data-schedule-item="05-07">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 05 - 07 Agustus 2026</span>
+                  <span class="schedule-price">Rp 975.000</span>
+                </div>
+                <h3 class="schedule-title">Ranu Kumbolo Camp</h3>
+                <p class="schedule-desc">Camping di danau Ranu Kumbolo lereng Gunung Semeru, Tanjakan Cinta & Oro-Oro Ombo.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> MP: Terminal Bungurasih</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Ranukumbolo (05-07 Ags - Rp 975rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Dieng + Batu Angkruk -->
+              <div class="schedule-card" data-schedule-item="08-09">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 08 - 09 Agustus 2026</span>
+                  <span class="schedule-price">Rp 500.000</span>
+                </div>
+                <h3 class="schedule-title">Dieng + Batu Angkruk</h3>
+                <p class="schedule-desc">Sensasi pemandangan di atas awan Batu Angkruk, Telaga Warna, Kawah Sikidang & Candi Dieng.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Dieng + Batu Angkruk (08-09 Ags - Rp 500rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. Pulau Menjangan + Pulau Tabuhan -->
+              <div class="schedule-card" data-schedule-item="08-09">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 08 - 09 Agustus 2026</span>
+                  <span class="schedule-price">Rp 500.000</span>
+                </div>
+                <h3 class="schedule-title">Pulau Menjangan + Pulau Tabuhan</h3>
+                <p class="schedule-desc">Eksplorasi taman laut Menjangan Bali & pantai pasir putih Pulau Tabuhan Banyuwangi.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Menjangan + Tabuhan (08-09 Ags - Rp 500rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6. Puthuk Gragal -->
+              <div class="schedule-card" data-schedule-item="08-09">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 09 Agustus 2026 (1D)</span>
+                  <span class="schedule-price">Rp 175.000</span>
+                </div>
+                <h3 class="schedule-title">Puthuk Gragal Trekking</h3>
+                <p class="schedule-desc">Trekking sejuk 1 hari ke Puthuk Gragal Mojokerto dengan pemandangan Gunung Welirang yang gagah.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Puthuk Gragal (09 Ags - Rp 175rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7. Bali Lovina -->
+              <div class="schedule-card" data-schedule-item="14-17">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 14 - 17 Agustus 2026</span>
+                  <span class="schedule-price">Rp 1.150.000</span>
+                </div>
+                <h3 class="schedule-title">Bali Lovina Dolphin Experience</h3>
+                <p class="schedule-desc">Melihat Lumba-Lumba liar di laut Lovina Bali, Bedugul, Tanah Lot, dan wisata populer Bali.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Bali Lovina (14-17 Ags - Rp 1.15jt)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 8. Gunung Prau -->
+              <div class="schedule-card" data-schedule-item="14-17">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 15 - 17 Agustus 2026</span>
+                  <span class="schedule-price">Rp 800.000</span>
+                </div>
+                <h3 class="schedule-title">Gunung Prau Sunrise Camp</h3>
+                <p class="schedule-desc">Pendakian Gunung Prau Dieng, bukit teletubbies, & pemandangan golden sunrise terbaik se-Jawa Tengah.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Gunung Prau (15-17 Ags - Rp 800rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 9. Kawah Ijen - TN Baluran - Air Terjun Jagir - Pantai Bama -->
+              <div class="schedule-card" data-schedule-item="14-17">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 15 - 16 Agustus 2026</span>
+                  <span class="schedule-price">Rp 400.000</span>
+                </div>
+                <h3 class="schedule-title">Ijen - Baluran - Jagir - Pantai Bama</h3>
+                <p class="schedule-desc">Blue Fire Ijen, Savana Bekol Baluran "Africa van Java", Air Terjun Jagir, dan hutan mangrove Pantai Bama.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Ijen - Baluran (15-16 Ags - Rp 400rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 10. Gili Ketapang -->
+              <div class="schedule-card" data-schedule-item="14-17">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 17 Agustus 2026 (1D)</span>
+                  <span class="schedule-price">Rp 285.000</span>
+                </div>
+                <h3 class="schedule-title">Gili Ketapang Snorkeling</h3>
+                <p class="schedule-desc">Spesial kemerdekaan 17 Agustus: Snorkeling ikan Nemo di Gili Ketapang Probolinggo & makan siang ikan bakar.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Gili Ketapang (17 Ags - Rp 285rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 11. Bromo Spot Bulan -->
+              <div class="schedule-card" data-schedule-item="22-23">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 22 - 23 Agustus 2026</span>
+                  <span class="schedule-price">Rp 550.000</span>
+                </div>
+                <h3 class="schedule-title">Bromo Spot Bulan (Special Edition)</h3>
+                <p class="schedule-desc">Eksplorasi lanskap eksotis Bromo mirip permukaan bulan dan hunting panorama malam bintang.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Bromo Spot Bulan (22-23 Ags - Rp 550rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 12. Lava Tour Merapi - Prambanan - Malioboro -->
+              <div class="schedule-card" data-schedule-item="22-23">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 22 - 23 Agustus 2026</span>
+                  <span class="schedule-price">Rp 525.000</span>
+                </div>
+                <h3 class="schedule-title">Lava Tour Merapi - Prambanan - Malioboro</h3>
+                <p class="schedule-desc">Offroad Jeep Merapi, Candi Prambanan, belanja khas Malioboro & oleh-oleh Bakpia Pathok 25.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Lava Tour Merapi (22-23 Ags - Rp 525rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 13. Bukit Watu Jengger -->
+              <div class="schedule-card" data-schedule-item="22-23">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 23 Agustus 2026 (1D)</span>
+                  <span class="schedule-price">Rp 175.000</span>
+                </div>
+                <h3 class="schedule-title">Bukit Watu Jengger</h3>
+                <p class="schedule-desc">Trekking ringan 1 hari ke puncak Bukit Watu Jengger Mojokerto dengan lanskap hijau pegunungan.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Bukit Watu Jengger (23 Ags - Rp 175rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 14. Dieng Culture Festival -->
+              <div class="schedule-card" data-schedule-item="27-30">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 27 - 30 Agustus 2026</span>
+                  <span class="schedule-price">Hubungi Admin</span>
+                </div>
+                <h3 class="schedule-title">Dieng Culture Festival 2026</h3>
+                <p class="schedule-desc">Festival tahunan terbesar Dieng: Ruwatan anak rambut gembel, pelepasan lampion malam hari & musik Jazz di Atas Awan.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Dieng Culture Festival (27-30 Ags)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Tanya Admin WA
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 15. Pantai Klayar - Buyutan - Sungai Maron -->
+              <div class="schedule-card" data-schedule-item="27-30">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 29 - 30 Agustus 2026</span>
+                  <span class="schedule-price">Rp 475.000</span>
+                </div>
+                <h3 class="schedule-title">Pantai Klayar - Buyutan - Sungai Maron</h3>
+                <p class="schedule-desc">Seruling Samudra Pantai Klayar Pacitan, tebing Pantai Buyutan, & menyusuri indahnya Sungai Maron.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Klayar - Buyutan - Maron (29-30 Ags - Rp 475rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 16. Pantai Mutiara + JLS Sine View -->
+              <div class="schedule-card" data-schedule-item="27-30">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 29 - 30 Agustus 2026</span>
+                  <span class="schedule-price">Rp 350.000</span>
+                </div>
+                <h3 class="schedule-title">Pantai Mutiara + JLS Sine View</h3>
+                <p class="schedule-desc">Eksplorasi Pantai Mutiara Trenggalek dan pemandangan laut selatan dari Jalur Lintas Selatan (JLS).</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Pantai Mutiara + JLS Sine (29-30 Ags - Rp 350rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="schedule-expand-wrapper text-center">
+              <button class="btn btn-secondary schedule-expand-btn" data-schedule-expand>
+                <span>Lihat Semua Trip Agustus (16 Trip)</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- ========================================================
+               3. MONTH: SEPTEMBER 2026
+               ======================================================== -->
+          <div class="month-content-pane" data-month-content="september">
+
+            <div class="filter-tab-wrapper schedule-filters">
+              <button class="filter-tab-btn active" data-schedule-filter="all">Semua Tanggal (11 Trip)</button>
+              <button class="filter-tab-btn" data-schedule-filter="05-06">05 - 06 Sep</button>
+              <button class="filter-tab-btn" data-schedule-filter="12-13">12 - 13 Sep</button>
+              <button class="filter-tab-btn" data-schedule-filter="19-20">19 - 20 Sep</button>
+              <button class="filter-tab-btn" data-schedule-filter="26-27">26 - 27 Sep</button>
+            </div>
+
+            <div class="schedule-grid">
+
+              <!-- 1. Bromo -->
+              <div class="schedule-card" data-schedule-item="05-06">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 05 - 06 September 2026</span>
+                  <span class="schedule-price">Rp 375.000</span>
+                </div>
+                <h3 class="schedule-title">Gunung Bromo Sunrise</h3>
+                <p class="schedule-desc">Penanjakan Sunrise Bromo, Kawah Bromo, Pasir Berbisik, dan Savana Teletubbies.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Bromo (05-06 Sep - Rp 375rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Kawah Ijen - Jagir - Djawatan -->
+              <div class="schedule-card" data-schedule-item="05-06">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 05 - 06 September 2026</span>
+                  <span class="schedule-price">Rp 350.000</span>
+                </div>
+                <h3 class="schedule-title">Kawah Ijen - Air Terjun Jagir - Djawatan</h3>
+                <p class="schedule-desc">Api Biru (Blue Fire) Kawah Ijen, kesegaran Air Terjun Jagir, dan keindahan hutan magis De Djawatan.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Ijen - Jagir - Djawatan (05-06 Sep - Rp 350rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Mt. Kelud -->
+              <div class="schedule-card" data-schedule-item="05-06">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 06 September 2026 (1D)</span>
+                  <span class="schedule-price">Rp 300.000</span>
+                </div>
+                <h3 class="schedule-title">Gunung Kelud Excursion</h3>
+                <p class="schedule-desc">Wisata kawah Gunung Kelud Kediri, terowongan kuno, dan pemandangan puncaknya yang eksotis.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Gunung Kelud (06 Sep - Rp 300rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Dieng + Sikunir -->
+              <div class="schedule-card" data-schedule-item="12-13">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 12 - 13 September 2026</span>
+                  <span class="schedule-price">Rp 500.000</span>
+                </div>
+                <h3 class="schedule-title">Dieng + Golden Sunrise Sikunir</h3>
+                <p class="schedule-desc">Berburu Golden Sunrise terbaik Asia di Puncak Sikunir Dieng, Telaga Warna, & Kawah Sikidang.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Dieng + Sikunir (12-13 Sep - Rp 500rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. Pulau Mbedil X Pulau Merah -->
+              <div class="schedule-card" data-schedule-item="12-13">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 12 - 13 September 2026</span>
+                  <span class="schedule-price">Rp 495.000</span>
+                </div>
+                <h3 class="schedule-title">Pulau Mbedil X Pulau Merah</h3>
+                <p class="schedule-desc">Hidden gem pantai Pulau Mbedil dan ikon sunset Pantai Pulau Merah Banyuwangi.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Mbedil X Pulau Merah (12-13 Sep - Rp 495rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6. Rafting Pekalen -->
+              <div class="schedule-card" data-schedule-item="12-13">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 13 September 2026 (1D)</span>
+                  <span class="schedule-price">Rp 500.000</span>
+                </div>
+                <h3 class="schedule-title">Rafting Sungai Pekalen</h3>
+                <p class="schedule-desc">Petualangan arung jeram seru di Sungai Pekalen Probolinggo melewati 7 air terjun & goa kelelawar.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Rafting Pekalen (13 Sep - Rp 500rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7. Jogja Sunset (Ngasem - Tamansari - Parangtritis - Obelix) -->
+              <div class="schedule-card" data-schedule-item="19-20">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 19 - 20 September 2026</span>
+                  <span class="schedule-price">Rp 475.000</span>
+                </div>
+                <h3 class="schedule-title">Jogja Sunset Experience</h3>
+                <p class="schedule-desc">Pasar Ngasem, Tamansari, sunset Pantai Parangtritis, dan tempat hits Obelix Sea View Jogja.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Jogja Sunset (19-20 Sep - Rp 475rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 8. Puncak B29 - Panorama Kapas Biru -->
+              <div class="schedule-card" data-schedule-item="19-20">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 19 - 20 September 2026</span>
+                  <span class="schedule-price">Rp 400.000</span>
+                </div>
+                <h3 class="schedule-title">Puncak B29 - Kapas Biru Lumajang</h3>
+                <p class="schedule-desc">Wisata di atas awan Puncak B29 Lumajang dan keasrian air terjun Panorama Kapas Biru.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Puncak B29 - Kapas Biru (19-20 Sep - Rp 400rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 9. Gn. Andong X Malioboro -->
+              <div class="schedule-card" data-schedule-item="26-27">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 26 - 27 September 2026</span>
+                  <span class="schedule-price">Rp 425.000</span>
+                </div>
+                <h3 class="schedule-title">Gunung Andong X Malioboro</h3>
+                <p class="schedule-desc">Pendakian ramah pemula Gunung Andong Magelang (360 view puncak) & belanja santai Malioboro.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Gn Andong X Malioboro (26-27 Sep - Rp 425rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 10. Pulau Tabuhan - Jeep Baluran -->
+              <div class="schedule-card" data-schedule-item="26-27">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 26 - 27 September 2026</span>
+                  <span class="schedule-price">Rp 595.000</span>
+                </div>
+                <h3 class="schedule-title">Pulau Tabuhan - Jeep Baluran</h3>
+                <p class="schedule-desc">Sensasi offroad Jeep Savana Baluran dan snorkeling pulau pasir putih Tabuhan Banyuwangi.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Tabuhan - Jeep Baluran (26-27 Sep - Rp 595rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 11. Gili Ketapang -->
+              <div class="schedule-card" data-schedule-item="26-27">
+                <div class="schedule-card-header">
+                  <span class="schedule-date-badge"><ion-icon name="calendar-outline"></ion-icon> 27 September 2026 (1D)</span>
+                  <span class="schedule-price">Rp 285.000</span>
+                </div>
+                <h3 class="schedule-title">Gili Ketapang Snorkeling</h3>
+                <p class="schedule-desc">Wisata bahari 1 hari snorkeling bersama ikan Nemo di Pulau Gili Ketapang Probolinggo.</p>
+                <div class="schedule-footer">
+                  <span class="meeting-pill"><ion-icon name="pin-outline"></ion-icon> Lamongan • Gresik • SBY • Sidoarjo</span>
+                  <div class="schedule-btn-group">
+                    <button class="btn btn-secondary btn-sm" data-trip-detail-trigger>
+                      <ion-icon name="information-circle-outline"></ion-icon> Lihat Detail
+                    </button>
+                    <button class="btn btn-primary btn-sm" data-book-btn data-destination="Open Trip Gili Ketapang (27 Sep - Rp 285rb)">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="schedule-expand-wrapper text-center">
+              <button class="btn btn-secondary schedule-expand-btn" data-schedule-expand>
+                <span>Lihat Semua Trip September (11 Trip)</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+            </div>
+
+          </div>
 
         </div>
       </section>
@@ -365,60 +1322,66 @@
         - #PACKAGE
       -->
 
-      <section class="package" id="package">
+      <section class="package" id="package" data-reveal="fade-up">
         <div class="container">
 
-          <p class="section-subtitle">Popular Packeges</p>
+          <p class="section-subtitle" data-reveal="fade-up">Layanan Unggulan</p>
 
-          <h2 class="h2 section-title">Checkout Our Packeges</h2>
+          <h2 class="h2 section-title" data-reveal="fade-up" data-reveal-delay="100">Paket Open Trip, Private & Gathering</h2>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+          <p class="section-text" data-reveal="fade-up" data-reveal-delay="150">
+            Daftar paket liburan terbaik dari CV. Arthenis Travelindo Jaya untuk perorangan, keluarga, hingga event gathering kantor.
           </p>
 
-          <ul class="package-list">
+          <!-- Package Filter Tabs -->
+          <div class="filter-tab-wrapper" data-reveal="fade-up" data-reveal-delay="200">
+            <button class="filter-tab-btn active" data-pkg-filter="all">Semua Paket</button>
+            <button class="filter-tab-btn" data-pkg-filter="open-trip">Open Trip</button>
+            <button class="filter-tab-btn" data-pkg-filter="private-trip">Private Trip</button>
+            <button class="filter-tab-btn" data-pkg-filter="gathering">Outing & Gathering</button>
+          </div>
 
-            <li>
+          <ul class="package-list" data-pkg-grid>
+
+            <li data-pkg-item="open-trip" data-reveal="stagger">
               <div class="package-card">
 
+                <button class="wishlist-btn" aria-label="Tambah ke wishlist" data-wishlist-btn data-item-name="Open Trip Bromo Midnight">
+                  <ion-icon name="heart-outline" class="heart-icon"></ion-icon>
+                </button>
+
                 <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                  <img src="./assets/images/packege-1.jpg" alt="Open Trip Bromo Midnight" loading="lazy" width="380" height="250">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+                  <h3 class="h3 card-title">Open Trip Bromo Midnight (Setiap Weekend)</h3>
 
                   <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
+                    Include: Transportasi AC Surabaya PP, Jeep 4x4 Bromo, Tiket Masuk TNBTS, Driver, Tour Leader & Dokumentasi Foto.
                   </p>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p class="text">1 Hari</p>
                       </div>
                     </li>
 
                     <li class="card-meta-item">
                       <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
+                        <ion-icon name="people-outline"></ion-icon>
+                        <p class="text">Open Seat</p>
                       </div>
                     </li>
 
                     <li class="card-meta-item">
                       <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p class="text">Start Surabaya</p>
                       </div>
                     </li>
 
@@ -430,7 +1393,7 @@
 
                   <div class="wrapper">
 
-                    <p class="reviews">(25 reviews)</p>
+                    <p class="reviews">(85 ulasan)</p>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -443,56 +1406,56 @@
                   </div>
 
                   <p class="price">
-                    $750
-                    <span>/ per person</span>
+                    Rp 350.000
+                    <span>/ per orang</span>
                   </p>
 
-                  <button class="btn btn-secondary">Book Now</button>
+                  <button class="btn btn-secondary" data-book-btn data-destination="Open Trip Bromo Midnight Rp 350rb">Pesan Seat WA</button>
 
                 </div>
 
               </div>
             </li>
 
-            <li>
+            <li data-pkg-item="private-trip" data-reveal="stagger" data-reveal-delay="100">
               <div class="package-card">
 
+                <button class="wishlist-btn" aria-label="Tambah ke wishlist" data-wishlist-btn data-item-name="Private Trip Phinisi Labuan Bajo">
+                  <ion-icon name="heart-outline" class="heart-icon"></ion-icon>
+                </button>
+
                 <figure class="card-banner">
-                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                  <img src="./assets/images/packege-2.jpg" alt="Private Trip Phinisi Labuan Bajo" loading="lazy" width="380" height="250">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
+                  <h3 class="h3 card-title">Private Trip Labuan Bajo Phinisi Deluxe</h3>
 
                   <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
+                    Fasilitas privat kapal Phinisi AC, 3x makan per hari, alat snorkeling, dokumentasi drone & kamera underwater.
                   </p>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p class="text">3D/2N</p>
                       </div>
                     </li>
 
                     <li class="card-meta-item">
                       <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
+                        <ion-icon name="people-outline"></ion-icon>
+                        <p class="text">Privat 6-12pax</p>
                       </div>
                     </li>
 
                     <li class="card-meta-item">
                       <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p class="text">Labuan Bajo</p>
                       </div>
                     </li>
 
@@ -504,7 +1467,7 @@
 
                   <div class="wrapper">
 
-                    <p class="reviews">(20 reviews)</p>
+                    <p class="reviews">(60 ulasan)</p>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -517,56 +1480,56 @@
                   </div>
 
                   <p class="price">
-                    $520
-                    <span>/ per person</span>
+                    Rp 3.250.000
+                    <span>/ per orang</span>
                   </p>
 
-                  <button class="btn btn-secondary">Book Now</button>
+                  <button class="btn btn-secondary" data-book-btn data-destination="Private Trip Phinisi Labuan Bajo">Pesan Seat WA</button>
 
                 </div>
 
               </div>
             </li>
 
-            <li>
+            <li data-pkg-item="gathering" data-reveal="stagger" data-reveal-delay="200">
               <div class="package-card">
 
+                <button class="wishlist-btn" aria-label="Tambah ke wishlist" data-wishlist-btn data-item-name="Outing & Corporate Gathering">
+                  <ion-icon name="heart-outline" class="heart-icon"></ion-icon>
+                </button>
+
                 <figure class="card-banner">
-                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
+                  <img src="./assets/images/packege-3.jpg" alt="Outing & Corporate Gathering" loading="lazy" width="380" height="250">
                 </figure>
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
+                  <h3 class="h3 card-title">Outing & Corporate Gathering Special</h3>
 
                   <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
+                    Paket gathering perusahaan/instansi lengkap dengan fun games team building, gala dinner, bus pariwisata & dokumentasi video.
                   </p>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p class="text">2D/1N</p>
                       </div>
                     </li>
 
                     <li class="card-meta-item">
                       <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
+                        <ion-icon name="people-outline"></ion-icon>
+                        <p class="text">Min 20 pax</p>
                       </div>
                     </li>
 
                     <li class="card-meta-item">
                       <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p class="text">Surabaya/Bali/Jogja</p>
                       </div>
                     </li>
 
@@ -578,7 +1541,7 @@
 
                   <div class="wrapper">
 
-                    <p class="reviews">(40 reviews)</p>
+                    <p class="reviews">(110 ulasan)</p>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -591,11 +1554,11 @@
                   </div>
 
                   <p class="price">
-                    $660
-                    <span>/ per person</span>
+                    Rp 1.850.000
+                    <span>/ per orang</span>
                   </p>
 
-                  <button class="btn btn-secondary">Book Now</button>
+                  <button class="btn btn-secondary" data-book-btn data-destination="Outing & Corporate Gathering Special">Konsultasi Outing WA</button>
 
                 </div>
 
@@ -604,7 +1567,10 @@
 
           </ul>
 
-          <button class="btn btn-primary">View All Packages</button>
+          <button class="btn btn-primary" data-book-btn data-destination="Konsultasi Custom Trip Arthenis" data-reveal="fade-up">
+            <ion-icon name="grid-outline"></ion-icon>
+            Konsultasi Custom Package
+          </button>
 
         </div>
       </section>
@@ -617,52 +1583,198 @@
         - #GALLERY
       -->
 
-      <section class="gallery" id="gallery">
+      <section class="gallery" id="gallery" data-reveal="fade-up">
         <div class="container">
 
-          <p class="section-subtitle">Photo Gallery</p>
+          <p class="section-subtitle" data-reveal="fade-up">Dokumentasi Perjalanan</p>
 
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
+          <h2 class="h2 section-title" data-reveal="fade-up" data-reveal-delay="100">Dokumentasi Arthenis Travel</h2>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+          <p class="section-text" data-reveal="fade-up" data-reveal-delay="150">
+            Kumpulan momen seru perjalanan Open Trip, Private Trip, dan Outing Gathering bersama Arthenis Travel Surabaya.
           </p>
 
           <ul class="gallery-list">
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+            <li class="gallery-item" data-reveal="stagger">
+              <figure class="gallery-image" data-gallery-item data-src="./assets/images/gallery-1.jpg" data-caption="Open Trip Bromo Sunrise Every Weekend">
+                <img src="./assets/images/gallery-1.jpg" alt="Open Trip Bromo Sunrise" loading="lazy" width="300" height="300">
+                <div class="gallery-overlay">
+                  <ion-icon name="expand-outline"></ion-icon>
+                  <span class="gallery-label">Lihat Foto</span>
+                </div>
               </figure>
             </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+            <li class="gallery-item" data-reveal="stagger" data-reveal-delay="100">
+              <figure class="gallery-image" data-gallery-item data-src="./assets/images/gallery-2.jpg" data-caption="Kunjungan & Penjemputan Wisatawan Surabaya">
+                <img src="./assets/images/gallery-2.jpg" alt="Wisatawan Arthenis Travel" loading="lazy" width="300" height="300">
+                <div class="gallery-overlay">
+                  <ion-icon name="expand-outline"></ion-icon>
+                  <span class="gallery-label">Lihat Foto</span>
+                </div>
               </figure>
             </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+            <li class="gallery-item" data-reveal="stagger" data-reveal-delay="200">
+              <figure class="gallery-image" data-gallery-item data-src="./assets/images/gallery-3.jpg" data-caption="Sailing Phinisi & Island Hopping Labuan Bajo">
+                <img src="./assets/images/gallery-3.jpg" alt="Sailing Phinisi Labuan Bajo" loading="lazy" width="300" height="300">
+                <div class="gallery-overlay">
+                  <ion-icon name="expand-outline"></ion-icon>
+                  <span class="gallery-label">Lihat Foto</span>
+                </div>
               </figure>
             </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+            <li class="gallery-item" data-reveal="stagger" data-reveal-delay="300">
+              <figure class="gallery-image" data-gallery-item data-src="./assets/images/gallery-4.jpg" data-caption="Outing & Corporate Gathering Team Building">
+                <img src="./assets/images/gallery-4.jpg" alt="Outing Gathering Surabaya" loading="lazy" width="300" height="300">
+                <div class="gallery-overlay">
+                  <ion-icon name="expand-outline"></ion-icon>
+                  <span class="gallery-label">Lihat Foto</span>
+                </div>
               </figure>
             </li>
 
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+            <li class="gallery-item" data-reveal="stagger" data-reveal-delay="400">
+              <figure class="gallery-image" data-gallery-item data-src="./assets/images/gallery-5.jpg" data-caption="Exotic Beach Sunset Nusa Penida Bali">
+                <img src="./assets/images/gallery-5.jpg" alt="Beach Sunset Bali" loading="lazy" width="300" height="300">
+                <div class="gallery-overlay">
+                  <ion-icon name="expand-outline"></ion-icon>
+                  <span class="gallery-label">Lihat Foto</span>
+                </div>
               </figure>
             </li>
 
           </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #DOCUMENTATION (Jasa Dokumentasi Foto & Drone Video)
+      -->
+      <section class="documentation" id="documentation" data-reveal="fade-up">
+        <div class="container">
+
+          <div class="doc-header text-center">
+            <span class="section-subtitle">Layanan Spesial 📸🛸</span>
+            <h2 class="h2 section-title">Dokumentasi Foto & Drone Video</h2>
+            <p class="section-text">
+              Abadikan setiap momen liburan impianmu! Arthenis Tour & Travel menyediakan layanan dokumentasi profesional & video reels kekinian untuk setiap perjalananmu.
+            </p>
+          </div>
+
+          <div class="doc-grid">
+
+            <div class="doc-card" data-reveal="fade-up">
+              <div class="doc-icon">
+                <ion-icon name="camera-outline"></ion-icon>
+              </div>
+              <h3 class="doc-title">Foto DSLR / Mirrorless HD</h3>
+              <p class="doc-desc">Jepretan profesional sudut terbaik dari tim Tour Leader terampil. Hasil foto jernih, tajam & siap upload di feed sosial media.</p>
+              <span class="doc-tag">Include di Setiap Trip</span>
+            </div>
+
+            <div class="doc-card" data-reveal="fade-up" data-reveal-delay="100">
+              <div class="doc-icon">
+                <ion-icon name="planet-outline"></ion-icon>
+              </div>
+              <h3 class="doc-title">Cinematic Drone 4K Footage</h3>
+              <p class="doc-desc">Pengambilan gambar dari udara untuk keindahan lanskap gunung, pantai perawan & laut eksotis. Tampilan sudut pandang yang memukau!</p>
+              <span class="doc-tag">Spot Gunung & Pantai</span>
+            </div>
+
+            <div class="doc-card" data-reveal="fade-up" data-reveal-delay="200">
+              <div class="doc-icon">
+                <ion-icon name="videocam-outline"></ion-icon>
+              </div>
+              <h3 class="doc-title">Free TikTok & Reels Video Edit</h3>
+              <p class="doc-desc">Bukan sekadar foto mentah! Kami berikan bonus editan video pendek bertema estetik untuk bahan konten TikTok & Instagram Reels kamu.</p>
+              <span class="doc-tag">Format Vertikal (9:16)</span>
+            </div>
+
+            <div class="doc-card" data-reveal="fade-up" data-reveal-delay="300">
+              <div class="doc-icon">
+                <ion-icon name="cloud-download-outline"></ion-icon>
+              </div>
+              <h3 class="doc-title">Akses Cepat Google Drive</h3>
+              <p class="doc-desc">Seluruh file foto & video resolusi asli diunggah ke Google Drive dan dibagikan ke peserta maksimal 2x24 jam setelah trip selesai.</p>
+              <span class="doc-tag">Akses Selamanya</span>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #FAQ (Tanya Jawab Sering Ditanyakan)
+      -->
+      <section class="faq" id="faq" data-reveal="fade-up">
+        <div class="container">
+
+          <div class="faq-header text-center">
+            <span class="section-subtitle">Pusat Informasi ❓</span>
+            <h2 class="h2 section-title">Pertanyaan Sering Ditanyakan (FAQ)</h2>
+            <p class="section-text">
+              Punya pertanyaan seputar Open Trip atau Private Trip bersama Arthenis Travel? Temukan jawabannya di bawah ini!
+            </p>
+          </div>
+
+          <div class="faq-list">
+
+            <div class="faq-item" data-faq-item>
+              <button class="faq-question" data-faq-toggle>
+                <span>Apakah harga paket Open Trip sudah termasuk dokumentasi foto & video?</span>
+                <ion-icon name="chevron-down-outline" class="faq-icon"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>Ya, betul sekali! Hampir seluruh paket Open Trip Arthenis Tour & Travel sudah termasuk layanan dokumentasi foto & editan video pendek tanpa biaya tambahan.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-faq-item>
+              <button class="faq-question" data-faq-toggle>
+                <span>Dimana saja titik penjemputan (Meeting Point) peserta?</span>
+                <ion-icon name="chevron-down-outline" class="faq-icon"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>Titik penjemputan utama kami meliputi area <strong>Lamongan, Gresik, Surabaya (Terminal Bungurasih/Stasiun), dan Sidoarjo</strong>. Detail lokasi tepat akan diinfokan H-2 via grup WhatsApp peserta.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-faq-item>
+              <button class="faq-question" data-faq-toggle>
+                <span>Apakah aman untuk orang yang mendaftar sendirian (Solo Traveler)?</span>
+                <ion-icon name="chevron-down-outline" class="faq-icon"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>Sangat aman dan ramah! Sebagian besar peserta Open Trip kami adalah solo traveler. Anda akan bertemu dengan teman-teman baru yang seru dan dipandu oleh Tour Leader yang ramah.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-faq-item>
+              <button class="faq-question" data-faq-toggle>
+                <span>Apakah Arthenis Travel melayani Private Trip dan Outing Kantor?</span>
+                <ion-icon name="chevron-down-outline" class="faq-icon"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>Tentu saja! Kami berpengalaman melayani Private Family Trip, Honey Moon, serta Outing & Corporate Gathering kantor dengan tanggal dan destinasi yang bisa disesuaikan sepenuhnya (*Custom Itinerary*).</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-faq-item>
+              <button class="faq-question" data-faq-toggle>
+                <span>Bagaimana sistem pembayaran dan booking seat?</span>
+                <ion-icon name="chevron-down-outline" class="faq-icon"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>Booking seat dapat dilakukan dengan membayar DP (Down Payment) via transfer bank / QRIS. Pelunasan sisa biaya dapat dilakukan saat keberangkatan atau H-1 trip.</p>
+              </div>
+            </div>
+
+          </div>
 
         </div>
       </section>
@@ -675,22 +1787,23 @@
         - #CTA
       -->
 
-      <section class="cta" id="contact">
+      <section class="cta" id="contact" data-reveal="fade-up">
         <div class="container">
 
           <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
+            <p class="section-subtitle" data-reveal="fade-up">Hubungi Kami</p>
 
-            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+            <h2 class="h2 section-title" data-reveal="fade-up" data-reveal-delay="100">Rencanakan Liburan Impian Anda Bersama Arthenis Travel!</h2>
 
-            <p class="section-text">
-              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
-              laudantium. Sit ornare
-              mollitia tenetur, aptent.
+            <p class="section-text" data-reveal="fade-up" data-reveal-delay="150">
+              Dapatkan info ketersediaan seat Open Trip akhir pekan ini atau konsultasi gratis rencana Private Trip / Outing kantor Anda.
             </p>
           </div>
 
-          <button class="btn btn-secondary">Contact Us !</button>
+          <a href="https://wa.me/6282230557434" target="_blank" class="btn btn-secondary" data-reveal="fade-up" data-reveal-delay="200">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            Chat WhatsApp Admin (0822-3055-7434)
+          </a>
 
         </div>
       </section>
@@ -708,49 +1821,50 @@
 
   <footer class="footer">
 
-    <div class="footer-top">
+    <div class="footer-top" data-reveal="fade-up">
       <div class="container">
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Tourly logo">
+          <a href="#" class="logo brand-text-logo">
+            <span class="brand-name">Arthenis<span>Travel</span></span>
+            <span class="brand-badge">Surabaya • Est. 2014</span>
           </a>
 
           <p class="footer-text">
-            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
-            at
-            perferendis, pretium, aenean aut ultrices.
+            <strong>CV. ARTHENIS TRAVELINDO JAYA</strong> — Agen perjalanan terpercaya di Surabaya sejak 2014. Melayani Open Trip akhir pekan, Private Trip eksklusif, serta Outing & Corporate Gathering di seluruh Nusantara.
           </p>
 
         </div>
 
         <div class="footer-contact">
 
-          <h4 class="contact-title">Contact Us</h4>
+          <h4 class="contact-title">Kantor & Kontak</h4>
 
           <p class="contact-text">
-            Feel free to contact and reach us !!
+            Kunjungi kantor kami atau hubungi admin WhatsApp 24/7:
           </p>
 
           <ul>
 
             <li class="contact-item">
-              <ion-icon name="call-outline"></ion-icon>
-
-              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              <a href="https://wa.me/6282230557434" target="_blank" class="contact-link">0822-3055-7434 (WA Fast Response)</a>
             </li>
 
             <li class="contact-item">
-              <ion-icon name="mail-outline"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <a href="https://instagram.com/arthenistravel_sby/?hl=en" target="_blank" class="contact-link">@arthenistravel_sby</a>
+            </li>
 
-              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+            <li class="contact-item">
+              <ion-icon name="link-outline"></ion-icon>
+              <a href="https://linktr.ee/arthenistravel" target="_blank" class="contact-link">linktr.ee/arthenistravel</a>
             </li>
 
             <li class="contact-item">
               <ion-icon name="location-outline"></ion-icon>
-
-              <address>3146 Koontz, California</address>
+              <address>Urban Mansion, Jl. Jojoran 1 No. 117 (N117), Surabaya, Jawa Timur, Indonesia</address>
             </li>
 
           </ul>
@@ -760,13 +1874,13 @@
         <div class="footer-form">
 
           <p class="form-text">
-            Subscribe our newsletter for more update & news !!
+            Berlangganan info promo Open Trip & diskon liburan akhir pekan!
           </p>
 
-          <form action="" class="form-wrapper">
-            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+          <form action="#" class="form-wrapper" data-newsletter-form>
+            <input type="email" name="email" class="input-field" placeholder="Masukkan Email Anda" required>
 
-            <button type="submit" class="btn btn-secondary">Subscribe</button>
+            <button type="submit" class="btn btn-secondary">Berlangganan</button>
           </form>
 
         </div>
@@ -778,21 +1892,21 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+          &copy; 2026 <a href="#">CV. Arthenis Travelindo Jaya (Surabaya)</a>. Hak Cipta Dilindungi.
         </p>
 
         <ul class="footer-bottom-list">
 
           <li>
-            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            <a href="https://instagram.com/arthenistravel_sby/?hl=en" target="_blank" class="footer-bottom-link">Instagram</a>
           </li>
 
           <li>
-            <a href="#" class="footer-bottom-link">Term & Condition</a>
+            <a href="https://linktr.ee/arthenistravel" target="_blank" class="footer-bottom-link">Linktree</a>
           </li>
 
           <li>
-            <a href="#" class="footer-bottom-link">FAQ</a>
+            <a href="https://wa.me/6282230557434" target="_blank" class="footer-bottom-link">WhatsApp</a>
           </li>
 
         </ul>
@@ -810,13 +1924,242 @@
     - #GO TO TOP
   -->
 
-  <a href="#top" class="go-top" data-go-top>
+  <a href="#top" class="go-top" data-go-top aria-label="Kembali ke atas">
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
 
 
+  <!-- 
+    - #SCROLL PROGRESS
+  -->
 
+  <div class="scroll-progress" data-scroll-progress>
+    <div class="scroll-progress-bar" data-scroll-progress-bar></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #BOOKING MODAL
+  -->
+
+  <div class="modal-container" data-booking-modal aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+
+    <div class="modal-card">
+      <button class="modal-close-btn" data-modal-close aria-label="Tutup modal">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-icon">
+          <ion-icon name="airplane-outline"></ion-icon>
+        </div>
+        <h3 class="h3 modal-title">Pesan Trip Bersama Arthenis</h3>
+        <p class="modal-subtitle">Isi data pemesanan di bawah ini atau lanjutkan ke WhatsApp Admin.</p>
+      </div>
+
+      <form class="modal-form" data-booking-form>
+
+        <div class="input-group">
+          <label class="input-label" for="modal-destination">Destinasi / Paket Pilihan</label>
+          <div class="input-with-icon">
+            <ion-icon name="location-outline"></ion-icon>
+            <input type="text" name="destination" id="modal-destination" class="input-field" data-modal-destination required>
+          </div>
+        </div>
+
+        <div class="input-grid">
+          <div class="input-group">
+            <label class="input-label" for="modal-name">Nama Lengkap*</label>
+            <div class="input-with-icon">
+              <ion-icon name="person-outline"></ion-icon>
+              <input type="text" name="name" id="modal-name" class="input-field" placeholder="Nama Anda" required>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" for="modal-phone">Nomor WhatsApp*</label>
+            <div class="input-with-icon">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              <input type="tel" name="phone" id="modal-phone" class="input-field" placeholder="08123456789" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-grid">
+          <div class="input-group">
+            <label class="input-label" for="modal-guests">Jumlah Peserta (Pax)*</label>
+            <div class="input-with-icon">
+              <ion-icon name="people-outline"></ion-icon>
+              <input type="number" name="guests" id="modal-guests" class="input-field" min="1" max="100" value="2" required>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" for="modal-date">Tanggal Keberangkatan*</label>
+            <div class="input-with-icon">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <input type="date" name="date" id="modal-date" class="input-field" required>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary modal-submit-btn">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          Kirim Pemesanan via WhatsApp
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #LIGHTBOX MODAL
+  -->
+
+  <div class="lightbox-modal" data-lightbox-modal aria-hidden="true">
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" data-lightbox-close aria-label="Tutup preview foto">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="lightbox-img-wrapper">
+        <img src="" alt="Preview foto trip Arthenis Travel" class="lightbox-img" data-lightbox-img>
+      </div>
+
+      <div class="lightbox-footer">
+        <p class="lightbox-caption" data-lightbox-caption></p>
+        <div class="lightbox-counter" data-lightbox-counter>1 / 5</div>
+      </div>
+
+      <button class="lightbox-nav-btn prev" data-lightbox-prev aria-label="Foto sebelumnya">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+
+      <button class="lightbox-nav-btn next" data-lightbox-next aria-label="Foto berikutnya">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOAST NOTIFICATION CONTAINER
+  -->
+
+  <div class="toast-container" data-toast-container></div>
+
+
+
+
+
+  <!-- Floating WhatsApp Quick Speed Dial -->
+  <a href="https://wa.me/6282230557434?text=Halo%20Admin%20Arthenis%20Travel,%20saya%20ingin%20tanya%20jadwal%20dan%20dokumentasi%20trip..." target="_blank" class="float-wa-btn" aria-label="Chat WhatsApp Admin">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+    <span class="float-wa-text">Konsultasi WA</span>
+  </a>
+
+  <!-- ========================================================
+       TRIP DETAIL & FACILITIES MODAL WITH IMAGE SLIDER
+       ======================================================== -->
+  <div class="modal-container trip-detail-modal" data-trip-detail-modal aria-hidden="true">
+    <div class="modal-backdrop" data-trip-detail-close></div>
+
+    <div class="modal-card trip-modal-card">
+      <button class="modal-close-btn" data-trip-detail-close aria-label="Tutup Modal">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <!-- Interactive Gallery Slider inside Modal -->
+      <div class="modal-gallery-slider">
+        <div class="slider-track" data-modal-slider-track>
+          <img src="./assets/images/popular-1.jpg" alt="Foto Trip 1" class="modal-slide-img active">
+          <img src="./assets/images/popular-2.jpg" alt="Foto Trip 2" class="modal-slide-img">
+          <img src="./assets/images/popular-3.jpg" alt="Foto Trip 3" class="modal-slide-img">
+        </div>
+        <button class="modal-slider-nav prev" data-modal-slide="prev" aria-label="Foto Sebelumnya">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <button class="modal-slider-nav next" data-modal-slide="next" aria-label="Foto Berikutnya">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+        <div class="modal-slider-dots" data-modal-dots>
+          <span class="dot active" data-slide-dot="0"></span>
+          <span class="dot" data-slide-dot="1"></span>
+          <span class="dot" data-slide-dot="2"></span>
+        </div>
+      </div>
+
+      <div class="modal-trip-content">
+        <div class="modal-trip-header-row">
+          <span class="modal-date-pill" data-modal-date>
+            <ion-icon name="calendar-outline"></ion-icon> 04 - 05 Juli 2026
+          </span>
+          <span class="modal-price-pill" data-modal-price>Rp 375.000</span>
+        </div>
+
+        <h3 class="modal-trip-title" data-modal-title>Gunung Bromo Sunrise</h3>
+
+        <div class="modal-mp-box">
+          <ion-icon name="location-sharp"></ion-icon>
+          <span>Meeting Point: <strong data-modal-mp>Lamongan • Gresik • Surabaya • Sidoarjo</strong></span>
+        </div>
+
+        <p class="modal-trip-desc" data-modal-desc>
+          Midnight trip Bromo, Jeep 4x4, Penanjakan Sunrise, Kawah Bromo, Pasir Berbisik & Savana Teletubbies.
+        </p>
+
+        <!-- Facilities Section: Include vs Exclude -->
+        <div class="facility-grid">
+          <div class="facility-card include">
+            <div class="facility-header">
+              <ion-icon name="checkmark-circle"></ion-icon>
+              <h4>Fasilitas Include (Termasuk):</h4>
+            </div>
+            <ul class="facility-list" data-modal-include>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Transportasi AC Surabaya/Gresik/Sidoarjo PP</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Driver & Tour Leader Ramah & Berpengalaman</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Tiket Masuk Destinasi Wisata Resmi</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Free Dokumentasi Foto & Video Reels Vertikal</li>
+              <li><ion-icon name="checkmark-outline"></ion-icon> Air Mineral Selama Perjalanan</li>
+            </ul>
+          </div>
+
+          <div class="facility-card exclude">
+            <div class="facility-header">
+              <ion-icon name="close-circle"></ion-icon>
+              <h4>Fasilitas Exclude (Tidak Termasuk):</h4>
+            </div>
+            <ul class="facility-list" data-modal-exclude>
+              <li><ion-icon name="close-outline"></ion-icon> Makan & Minum Pribadi di Luar Program</li>
+              <li><ion-icon name="close-outline"></ion-icon> Sewa Kuda / Wahana Opsional</li>
+              <li><ion-icon name="close-outline"></ion-icon> Pengeluaran Pribadi & Tips Crew (Sukarela)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-bottom-actions">
+          <button class="btn btn-primary modal-wa-submit" data-modal-wa-direct>
+            <ion-icon name="logo-whatsapp"></ion-icon> Pesan Seat via WhatsApp
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <!-- 
     - custom js link
