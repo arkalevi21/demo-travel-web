@@ -799,5 +799,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  /**
+   * -------------------------------------------------------
+   * 18. FORCE AUTOPLAY HERO VIDEO BACKGROUND
+   * -------------------------------------------------------
+   */
+  const heroVideo = document.querySelector(".hero-video-bg");
+  if (heroVideo) {
+    heroVideo.muted = true;
+    const playPromise = heroVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        const startVideo = () => {
+          heroVideo.play();
+          document.removeEventListener("click", startVideo);
+          document.removeEventListener("touchstart", startVideo);
+          document.removeEventListener("scroll", startVideo);
+        };
+        document.addEventListener("click", startVideo);
+        document.addEventListener("touchstart", startVideo);
+        document.addEventListener("scroll", startVideo);
+      });
+    }
+  }
 
 });
