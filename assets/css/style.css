@@ -599,9 +599,86 @@ body.modal-active {
   font-size: 11.5px;
   font-weight: var(--fw-600);
   letter-spacing: 0.8px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Trust Bar & Google Rating */
+.hero-trust-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.trust-badge {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 5px 14px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  font-size: 12px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.trust-badge:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  color: var(--white);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.google-svg-icon {
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.rating-text-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rating-num {
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-800);
+  font-size: 13.5px;
+  color: #FFD700;
+}
+
+.stars-gold {
+  font-size: 10px;
+  letter-spacing: -1px;
+}
+
+.review-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: var(--fw-500);
+}
+
+.happy-customers ion-icon {
+  font-size: 16px;
+  color: #25D366;
+}
+
+.happy-customers strong {
+  color: #25D366;
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-800);
 }
 
 .hero-badge .badge-accent {
@@ -1856,47 +1933,102 @@ body.modal-active {
     padding-inline: 12px;
   }
 
-  /* Compact Hero */
+  /* Compact Sleek Hero */
   .hero {
-    padding-top: 92px;
-    padding-bottom: 28px;
-  }
-
-  .hero-title {
-    font-size: 22px;
-    line-height: 1.22;
-    margin-bottom: 10px;
+    padding-top: 90px;
+    padding-bottom: 24px;
   }
 
   .hero-badge {
-    font-size: 10.5px;
-    padding: 4px 12px 4px 5px;
-    margin-bottom: 12px;
+    font-size: 10px;
+    padding: 3px 10px 3px 4px;
+    margin-bottom: 8px;
   }
 
   .hero-badge .badge-accent {
-    font-size: 9.5px;
-    padding: 2px 9px;
+    font-size: 9px;
+    padding: 2px 7px;
+  }
+
+  .hero-trust-bar {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .trust-badge {
+    padding: 4px 10px;
+    font-size: 10.5px;
+    gap: 5px;
+  }
+
+  .rating-num {
+    font-size: 12px;
+  }
+
+  .stars-gold {
+    display: none;
+  }
+
+  .review-label {
+    font-size: 10px;
+  }
+
+  .happy-customers ion-icon {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 21px;
+    line-height: 1.25;
+    margin-bottom: 8px;
   }
 
   .hero-text {
-    font-size: 12px;
-    line-height: 1.55;
-    margin-bottom: 16px;
+    font-size: 11.5px;
+    line-height: 1.48;
+    margin-bottom: 14px;
+    max-width: 95%;
+    margin-inline: auto;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .btn-group .btn {
+    padding: 8px 12px;
+    font-size: 11.5px;
+    width: 49%;
+    border-radius: 30px;
+    text-transform: none;
+    letter-spacing: 0;
   }
 
   .hero-stats {
-    margin-top: 18px;
-    padding-top: 14px;
-    gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 8px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .stat-item {
+    text-align: center;
   }
 
   .stat-number {
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 800;
   }
 
   .stat-label {
-    font-size: 9px;
+    font-size: 9.5px;
+    color: rgba(255, 255, 255, 0.85);
   }
 
   /* Compact Tour Search */
@@ -1948,52 +2080,101 @@ body.modal-active {
     margin-top: 8px;
   }
 
-  /* Compact Schedule Cards */
+  /* Compact Schedule Cards - 2 Columns on Mobile with Image */
   .schedule-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
   .schedule-card {
-    padding: 14px 12px;
-    border-radius: 14px;
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
   }
 
-  .schedule-card-header {
+  /* Compact Card Image Thumbnail on Mobile */
+  .schedule-card-img {
+    display: block;
+    width: 100%;
+    height: 85px;
+    border-radius: 8px;
+    overflow: hidden;
     margin-bottom: 6px;
   }
 
-  .schedule-date-badge {
-    font-size: 10px;
-    padding: 3px 8px;
+  .schedule-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .schedule-price {
-    font-size: 15px;
-  }
-
-  .schedule-title {
-    font-size: 14.5px;
+  .schedule-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
     margin-bottom: 4px;
   }
 
-  .schedule-desc {
+  .schedule-date-badge {
+    font-size: 8.5px;
+    padding: 2px 5px;
+    line-height: 1.2;
+    width: fit-content;
+  }
+
+  .schedule-price {
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .schedule-title {
     font-size: 11.5px;
-    line-height: 1.45;
-    margin-bottom: 10px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .schedule-desc {
+    display: none;
   }
 
   .schedule-footer {
-    padding-top: 10px;
-    gap: 8px;
+    padding-top: 6px;
+    gap: 4px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   .meeting-pill {
-    font-size: 10px;
+    font-size: 8px;
+    line-height: 1.15;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
-  .btn-sm {
-    padding: 7px 12px;
-    font-size: 11.5px;
+  .schedule-btn-group {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .schedule-btn-group .btn-sm {
+    padding: 3px 4px;
+    height: 24px;
+    font-size: 9px;
+    gap: 3px;
+    border-radius: 12px;
+  }
+
+  .schedule-btn-group .btn-sm ion-icon {
+    font-size: 10px;
   }
 
   /* Compact Cards & Grid */
@@ -2129,8 +2310,7 @@ body.modal-active {
   .gallery-list { grid-template-columns: repeat(3, 1fr); }
 
   .schedule-grid { grid-template-columns: repeat(2, 1fr); }
-  .schedule-footer { flex-direction: row; justify-content: space-between; align-items: center; }
-  .btn-sm { width: auto; }
+  .schedule-footer { flex-direction: column; gap: 8px; }
 
   .cta .container {
     display: flex;
