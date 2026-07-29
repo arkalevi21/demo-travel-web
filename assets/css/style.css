@@ -720,26 +720,36 @@ body.modal-active {
 }
 
 .hero-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin-top: 30px;
-  padding-top: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  margin-top: 24px;
+  padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   width: 100%;
 }
 
+.stat-item {
+  flex: 1;
+  text-align: center;
+}
+
 .stat-number {
   color: var(--white);
-  font-size: 19px;
+  font-size: 16px;
   font-weight: var(--fw-800);
   font-family: var(--ff-montserrat);
+  white-space: nowrap;
 }
 
 .stat-label {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 10px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 9.5px;
   font-weight: var(--fw-500);
+  line-height: 1.25;
+  white-space: nowrap;
 }
 
 
@@ -2009,26 +2019,31 @@ body.modal-active {
   }
 
   .hero-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
     margin-top: 16px;
     padding-top: 12px;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
   }
 
   .stat-item {
+    flex: 1;
     text-align: center;
   }
 
   .stat-number {
-    font-size: 16px;
+    font-size: 13.5px;
     font-weight: 800;
   }
 
   .stat-label {
-    font-size: 9.5px;
+    font-size: 8.5px;
     color: rgba(255, 255, 255, 0.85);
+    line-height: 1.15;
   }
 
   /* Compact Tour Search */
@@ -2442,6 +2457,122 @@ body.modal-active {
     -webkit-backdrop-filter: blur(16px);
     padding-block: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Desktop Hero Polish (992px+) */
+  .hero {
+    padding-top: 155px;
+    padding-bottom: 65px;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+    padding: 6px 18px 6px 7px;
+    margin-bottom: 16px;
+  }
+
+  .hero-badge .badge-accent {
+    font-size: 11px;
+    padding: 4px 14px;
+  }
+
+  .hero-trust-bar {
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  .trust-badge {
+    padding: 8px 18px;
+    font-size: 13px;
+    gap: 10px;
+    border-radius: 50px;
+  }
+
+  .rating-num {
+    font-size: 14.5px;
+  }
+
+  .stars-gold {
+    display: inline-block;
+    font-size: 11px;
+  }
+
+  .review-label {
+    font-size: 12px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+    margin-bottom: 18px;
+    max-width: 780px;
+    margin-inline: auto;
+  }
+
+  .hero-text {
+    font-size: 15.5px;
+    line-height: 1.65;
+    max-width: 650px;
+    margin-inline: auto;
+    margin-bottom: 28px;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 35px;
+  }
+
+  .btn-group .btn {
+    width: auto;
+    padding: 12px 28px;
+    font-size: 13.5px;
+    border-radius: 50px;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 880px;
+    margin-inline: auto;
+    margin-top: 35px;
+    padding: 20px 28px;
+    background: rgba(13, 27, 42, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+  }
+
+  .stat-item {
+    text-align: center;
+    position: relative;
+  }
+
+  .stat-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .stat-number {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .stat-label {
+    font-size: 11.5px;
+    margin-top: 3px;
+    white-space: nowrap;
   }
 
   .tour-search-form {

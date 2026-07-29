@@ -404,6 +404,8 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const target = parseInt(entry.target.getAttribute("data-count"));
+        const customSuffix = entry.target.getAttribute("data-suffix");
+        const suffix = customSuffix !== null ? customSuffix : (target > 100 ? '+' : '');
         const duration = 2000;
         const startTime = performance.now();
         
@@ -413,12 +415,12 @@ document.addEventListener('DOMContentLoaded', () => {
           const eased = 1 - Math.pow(1 - progress, 3);
           const current = Math.floor(eased * target);
           
-          entry.target.textContent = target > 100 ? current + '+' : current;
+          entry.target.textContent = current.toLocaleString('id-ID') + suffix;
           
           if (progress < 1) {
             requestAnimationFrame(updateCounter);
           } else {
-            entry.target.textContent = target > 100 ? target + '+' : target;
+            entry.target.textContent = target.toLocaleString('id-ID') + suffix;
             entry.target.classList.add('counted');
           }
         }
