@@ -2261,6 +2261,26 @@ body.modal-active {
     padding: 16px;
     border-radius: 14px;
   }
+
+  /* Compact Floating WA & Go Top Buttons */
+  .float-wa-btn {
+    bottom: 16px;
+    left: 14px;
+    padding: 8px 14px 8px 10px;
+    font-size: 11.5px;
+  }
+
+  .float-wa-btn ion-icon {
+    font-size: 18px;
+  }
+
+  .go-top {
+    bottom: 16px;
+    right: 14px;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
 }
 
 
@@ -2783,7 +2803,7 @@ body.modal-active {
 .float-wa-btn {
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  left: 24px;
   background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
   color: var(--white);
   padding: 10px 18px 10px 14px;
